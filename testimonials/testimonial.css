@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  @import url('https://fonts.google.com/specimen/Barlow+Semi+Condensed');
+
+  body {
+      background-color: hsl(210, 46%, 95%);
+      padding: 50px 100px;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      color: #fff;
+  }
+  .profile {
+      display: flex;
+      align-items: center;
+  }
+  .profile img {
+      height: 100%;
+      border-radius: 50%;
+      margin-right: 3rem;
+  }
+  .profile h1 {
+     color: hsl(0, 0%, 81%);
+     font-size: 10px;
+  }
+  .profile h1 span {
+      font-size: 8px;
+      opacity: .5;
+  }
+  h2 {
+      font-size: 14px;
+      line-height: 20px;
+  }
+  p {
+      opacity: .5;
+      font-size: 12px;
+  }
+  .first-card {
+      background: url(images/bg-pattern-quotation.svg);
+      background-repeat: no-repeat;
+      background-color: hsl(263, 55%, 52%);
+      width: 70%;
+      background-position-x: 80%;
+  }
+  .second-card {
+      background-color: hsl(217, 19%, 35%);
+      width: 30%;
+      margin: 0 30px; 
+  }
+  .third-card {
+      background-color: hsl(0, 0%, 100%);
+      width: 30%;
+      color: #000;
+  }
+  .fourth-card {
+      background-color: hsl(219, 29%, 14%);
+      width: 70% ;
+      margin: 0 30px; 
+  }
+  .fifth-card {
+      background-color: hsl(0, 0%, 100%);
+      width: 90%;
+      color: #000;
+  }
+  #card {
+      padding: 20px 35px;
+      border-radius: 20px;
+  }
+  .main {
+      display: flex;
+  }
+  .main-section {
+      display: flex;
+      flex-direction: column;
+  }
+  .first-section {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      
+  }
+  .second-section {
+      display: flex;
+  }
+
+  @media screen and (max-width: 600px) {
+      .main, .first-section, .second-section {
+          flex-direction: column;
+      }
+      .first-card, .third-card, .fifth-card {
+          width: 100%;
+          margin-bottom: 25px;
+      }
+      .second-card, .fourth-card {
+          margin: 0 0;
+          width: 100%;
+          margin-bottom: 25px;
+      }
+      body {
+          padding: 20px 10px;
+      }
+      
+  }
